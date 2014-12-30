@@ -1,0 +1,14 @@
+<<-- RSK HMIF 2.0 beta -->>
+
+1. Login, tidak perlu database karena hanya satu akun: HMIF, pass: SuRaT
+	a. Pertimbangkan apakah perlu diterapkan sistem session atau penggunaan cookies (setelah 30 mnt tidak melakukan apa-apa maka akan otomatis logout)
+2. Buat surat
+	a. Setelah memilih pihak yang mengeluarkan surat bisa GET idpembuat-nya
+	b. Tombol Generate tidak aktif jika checkbox konfirmasi belum di check.
+	c. IP address client ikut dicatat di database
+	d. nomorsurat tidak auto_increment, jadi harus tahu nomor surat paling akhir dulu lalu di-increment manual
+	e. setelah klik generate, redirect ke laman daftar surat yang di bagian atasnya ditampilkan nomor surat baru (hasil generate)
+3. Daftar surat keluar
+	a. Fungsionalnya hanya menampilkan daftar surat keluar
+	b. Jika laman ini terbuka karena ada redirect dari laman buat surat, ada nomor surat paling baru di bagian atas. Jika laman ini terbuka karena tab "Daftar Surat Keluar" diklik (bukan setelah generate), hanya tampil tabel daftar surat keluar
+4. Logout, tampilkan konfirmasi apakah user benar-benar ingin logout
