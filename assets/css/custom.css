@@ -1,0 +1,18 @@
+body{
+	padding-top: 3em;
+	font-family: "Arial";
+	font-size: 17px;
+}
+.form-buatsurat .form-control{
+	position: relative;
+	height: auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	font-size: 16px;
+}
+.form-buatsurat .sr-only
+{
+	font-size: 17px;
+}
